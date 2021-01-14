@@ -1,0 +1,36 @@
+<body>
+  <div class="container">
+    <div class="col-sm-15 mx-auto" style="margin-top: 5%; text-align: center; text-shadow: rgb(9, 175, 73); background-color:orange; border-radius: 3px; box-shadow: 1px 1px 5px #555; text-shadow: 0.1em 0.1em 0.2em white">
+      <h1>
+        Tableau de Prévision Réseaux et PFS
+      </h1>
+    </div>
+    <div class="row">
+      <div style="align-content: center;">
+        <img src="assets/big data_rgb.jpg" alt="Zen Data" height="400px" width="600px">
+      </div>
+      <div class="col-sm-9 col-md-7 col-lg-4 mx-auto" style="margin-top: 2%;">
+        <div class="card card-signin my-5" style="background-color:aliceblue;">
+          <div class="card-body">
+            <h5 class="card-title text-center">Connectez-vous !</h5>
+            <form [formGroup]="loginForm" class="form-signin" (ngSubmit)="seConnecter()">
+              <div class="form-label-group">
+                <input type="text" id="inputLogin" class="form-control" placeholder="Login" formControlName="login" required autofocus>
+                <label for="inputLogin"></label>
+              </div>
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Mot de passe" formControlName="password" required>
+                <label for="inputPassword"></label>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit">
+                Connexion
+              </button>
+              <hr class="my-4">
+              <div style="text-align: center;">© 2020 DRPS/DEP - v1.0.0</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

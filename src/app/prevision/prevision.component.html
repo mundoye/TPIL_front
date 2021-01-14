@@ -1,0 +1,29 @@
+<app-header></app-header>
+<body>
+    <div class="row" style="margin-top : 2%">
+        <div class="col-md-1"></div>
+        <div class="col-md-5" style="margin-top: 3%; background-color: white; margin-right: 15px; box-shadow: 1px 1px 3px #555;border-radius: 5px;">
+            <div id="prev_data"></div>
+        </div>
+        <div class="col-md-5" style="margin-top: 3%; background-color: white; box-shadow: 1px 1px 3px #555;border-radius: 5px;">
+            <div id="prev_parc"></div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    
+
+    <div class="row" style="margin-top : 1%">
+        <div class="col-md-1"></div>
+        <div class="col-md-3" style="margin-top: 1%; padding: 0px;">
+            <input type="text" class="form-control" [(ngModel)]="cellule" id="cellule" aria-describedby="emailHelp" placeholder="Entrez le nom de la cellule">
+        </div>
+        <div class="col-md-2" style="margin-top: 1%; margin-right: 15px;">
+            <button type="submit" (click)="get_data()" class="btn btn-primary">Envoyer</button>
+        </div>
+        <div class="col-md-5" style="padding: 0px; margin-top: 1%;">
+            <div id="cells" style="background-color: white; box-shadow: 1px 1px 3px #555;border-radius: 5px;"></div>
+        </div>
+    </div>
+
+    <div class="row" style="height: 50px;"></div>
+</body>
